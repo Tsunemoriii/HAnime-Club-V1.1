@@ -41,7 +41,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
                 creates_join_request=True if REQ_CHANNEL and JOIN_REQS_DB else False
             )).invite_link
             INVITE_LINK = invite_link
-            logger.info("Created Req link")
+            logger.info("Invite Link Created Successfully")
         else:
             invite_link = INVITE_LINK
 
@@ -96,16 +96,19 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         else:
             return True
     except UserNotParticipant:
-        text=""" × 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗧𝗼 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲𝘀 × """
+        text="""× 𝗬𝗼𝘂 𝗠𝘂𝘀𝘁 𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗧𝗼 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲𝘀 × \n» 𝗔𝗳𝘁𝗲𝗿 𝗝𝗼𝗶𝗻𝗶𝗻𝗴 𝗕𝗼𝘁𝗵 𝗖𝗵𝗮𝗻𝗻𝗲𝗹, 𝗖𝗹𝗶𝗰𝗸 🍁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 🍁 𝗔𝗴𝗮𝗶𝗻 𝗙𝗿𝗼𝗺 𝗧𝗵𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹."""
 
         buttons = [
             [
-                InlineKeyboardButton("Rᴇϙᴜᴇsᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ", url=invite_link)
+                InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗦𝗼𝗻𝗶𝗰 𝗢𝘁𝗮𝗸𝘂𝘀⚡️⚡️", url=invite_link)
+            ],
+            [
+                InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗔𝗻𝗶𝗺𝗲 𝗙𝗹𝗶𝘅⚡️⚡️", url='https://t.me/Anime_Flix_Pro')
             ],
         ]
         
         if file_id:
-            buttons.append([InlineKeyboardButton(" Tʀʏ Aɢᴀɪɴ ", callback_data=f"{mode}#{file_id}")])
+            buttons.pop()
 
         if not is_cb:
             await update.reply(

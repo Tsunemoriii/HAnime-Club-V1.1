@@ -25,10 +25,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CinemaRoom')
+                InlineKeyboardButton('⚡️⚡️𝗦𝗼𝗻𝗶𝗰⚡️⚡️', url='https://t.me/Sonic_Otakus')
             ],
             [
-                InlineKeyboardButton('Hᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('𝗛𝗲𝗹𝗽', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -44,13 +44,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('× 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚡️⚡️𝗦𝗼𝗻𝗶𝗰 𝗢𝘁𝗮𝗸𝘂𝘀⚡️⚡️', url='https://t.me/Sonic_Otakus'),
             ],[
-            InlineKeyboardButton('Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CinemaRoom')
-            ],[      
-            InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('⚡️⚡️𝗔𝗻𝗶𝗺𝗲 𝗙𝗹𝗶𝘅⚡️⚡️', url='https://t.me/Anime_Flix_Pro')
+            ],[
+            InlineKeyboardButton('𝗛𝗲𝗹𝗽', callback_data='help'),
+            InlineKeyboardButton('𝗔𝗯𝗼𝘂𝘁', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -67,13 +66,13 @@ async def start(client, message):
             return
 
         buttons = [[
-            InlineKeyboardButton('× 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('× 𝗧𝗿𝘆 𝗠𝗲 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CinemaRoom')
+            InlineKeyboardButton('⚡️⚡️𝗦𝗼𝗻𝗶𝗰 𝗢𝘁𝗮𝗸𝘂𝘀⚡️⚡️', url='https://t.me/Sonic_Otakus'),
+            InlineKeyboardButton('⚡️⚡️𝗔𝗻𝗶𝗺𝗲 𝗙𝗹𝗶𝘅⚡️⚡️', url='https://t.me/Anime_Flix_Pro')
             ],[
-            InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('𝗛𝗲𝗹𝗽', callback_data='help'),
+            InlineKeyboardButton('𝗔𝗯𝗼𝘂𝘁', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -96,7 +95,7 @@ async def start(client, message):
         file_id = data
     
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply("Please wait")
+        sts = await message.reply("» 𝗬𝗼𝘂𝗿 𝗙𝗶𝗹𝗲𝘀 𝗔𝗿𝗲 𝗕𝗲𝗶𝗻𝗴 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁... \n » 𝗦𝗮𝘃𝗲 𝗧𝗵𝗲𝘀𝗲 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗦𝗮𝘃𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲𝘀. \n » 𝗙𝗶𝗹𝗲𝘀 𝗪𝗶𝗹𝗹 𝗕𝗲 𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗜𝗻 𝟯𝟬 𝗠𝗶𝗻𝘂𝘁𝗲𝘀. \n » 𝗠𝘂𝘀𝘁 𝗝𝗼𝗶𝗻 @Sonic_Otakus 𝗔𝗻𝗱 @Anime_Flix_Pro 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲.")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -125,8 +124,6 @@ async def start(client, message):
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
-                    caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("⚡ Jᴏɪɴ Oᴜʀ Gʀᴏᴜᴘ ⚡", url="https://t.me/CinemaChatRoom") ] ] ),
                     protect_content=msg.get('protect', False),
                     )
                 tim = str(get_del_time())
@@ -150,7 +147,7 @@ async def start(client, message):
         await sts.delete()
         return
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("Please wait")
+        sts = await message.reply("» 𝗬𝗼𝘂𝗿 𝗙𝗶𝗹𝗲𝘀 𝗔𝗿𝗲 𝗕𝗲𝗶𝗻𝗴 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁... \n » 𝗦𝗮𝘃𝗲 𝗧𝗵𝗲𝘀𝗲 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗦𝗮𝘃𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲𝘀. \n » 𝗙𝗶𝗹𝗲𝘀 𝗪𝗶𝗹𝗹 𝗕𝗲 𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗜𝗻 𝟯𝟬 𝗠𝗶𝗻𝘂𝘁𝗲𝘀. \n » 𝗠𝘂𝘀𝘁 𝗝𝗼𝗶𝗻 @Sonic_Otakus 𝗔𝗻𝗱 @Anime_Flix_Pro 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲.")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
@@ -220,7 +217,7 @@ async def start(client, message):
             return
         except:
             pass
-        return await message.reply('No such file exist.')
+        return await message.reply('<b><i>» Save These File In Your Saved Messages. It Will Be Deleted In 30 Minutes. \n» Must Join \n 1. ⚡️⚡️@Sonic_Otakus⚡️⚡️ \n 2. ⚡️⚡️@Anime_Flix_Pro⚡️⚡️</i></b>')
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
@@ -237,9 +234,9 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("Jᴏɪɴ Gʀᴏᴜᴘ", url="https://t.me/CinemaChatRoom"),
-                                               InlineKeyboardButton("Sʜᴀʀᴇ", url="https://t.me/share/url?url=https://t.me/CinemaChatRoom") ],
-                                             [ InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/CinemaRoom") ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽", url="https://t.me/Sonic_Otakus_Chat_Club"),
+                                               InlineKeyboardButton("𝗦𝗵𝗮𝗿𝗲", url="https://t.me/share/url?url=https://t.me/Sonic_Otakus") ],
+                                             [ InlineKeyboardButton("𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url="https://t.me/Sonic_Otakus_Chat_Club") ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
     tim = str(get_del_time())

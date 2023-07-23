@@ -1,14 +1,16 @@
 class script(object):
-    START_TXT = """"<b>Hello</b> Me :), An Autofilter who can provide you movies/series files.
-Group : t.me/CinemaChatRoom"""
-    HELP_TXT = """<i>Here is my help menu"""
-    ABOUT_TXT = """<b>★ Dᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/l_Damon_l'>Dᴀᴍᴏɴ Sᴀʟᴠᴀᴛᴏʀᴇ</a>
-★ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
-★ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
-★ Dᴀᴛᴀʙᴀsᴇ: <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
-★ Bᴏᴛ Gʀᴏᴜᴘ: <a href='https://t.me/CinemaChatRoom'>CɪɴᴇᴍᴀCʜᴀᴛRᴏᴏᴍ</a></b>"""
-    SOURCE_TXT = """<b>NOTE:</b>
-<b>Tʜɪs Bᴏᴛ Is Nᴏᴛ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ, Cᴏɴᴛᴀᴄᴛ Tᴏ <a href='https://t.me/l_Damon_l'>Bᴏᴛ Oᴡɴᴇʀ</a>"""
+    START_TXT = """
+<b>𝗛𝗲𝗹𝗹𝗼!! 𝗖𝗼𝗺𝗽𝗮𝗱𝗿𝗲 ꈍ◡ꈍ
+<i>» Welcome To ⚡️⚡️Sonic Family⚡️⚡
+» I'm Faye Valentine - An Advanced Anime Files Providing Bot.
+» You Must Join My Channel @Sonic_Otakus And @Anime_Flix_Pro To Use Me.
+» Enjoy Your Anime Watching Experience.</i></b>"""
+    HELP_TXT = """<b><i>» This is My Help Menu.</i></b>"""
+    ABOUT_TXT = """<b><i>» I Am Created By - <a href='https://t.me/NORMAN_2_2_1_9_4'>𝗡𝗼𝗿𝗺𝗮𝗻</a>.
+» If You're Intrested In Paid Promotion/Bot Script.
+» Contact My <a href='https://t.me/NORMAN_2_2_1_9_4'>𝗠𝗮𝘀𝘁𝗲𝗿</a>.</i></b>"""
+    SOURCE_TXT = """
+<b><i>» Sure You Can Have Me, But Talk To My <a href='https://t.me/NORMAN_2_2_1_9_4'>𝗠𝗮𝘀𝘁𝗲𝗿</a> First.</i></b>"""
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
 
@@ -84,11 +86,11 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /broadcast - <code>ᴛᴏ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴀʟʟ ᴜꜱᴇʀꜱ</code>"""
     
 
-    STATUS_TXT = """<b>📂 ᴛᴏᴛᴀʟ ғɪʟᴇs: <code>{}</code>
-👤 ᴛᴏᴛᴀʟ ᴜsᴇʀs: <code>{}</code>
-♻️ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: <code>{}</code>
-🗃️ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code>
-🆓 ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code></b>"""
+    STATUS_TXT = """<b>ᴛᴏᴛᴀʟ ғɪʟᴇs: <code>{}</code>
+ᴛᴏᴛᴀʟ ᴜsᴇʀs: <code>{}</code>
+ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: <code>{}</code>
+ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code>
+ғʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code></b>"""
     
     LOG_TEXT_G = """#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)

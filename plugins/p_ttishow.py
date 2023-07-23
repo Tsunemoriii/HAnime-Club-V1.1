@@ -256,7 +256,7 @@ async def list_users(bot, message):
 
 @Client.on_message(filters.command('chats') & filters.user(ADMINS))
 async def list_chats(bot, message):
-    raju = await message.reply('Getting List Of chats')
+    raju = await message.reply('Getting List Of Chats')
     chats = await db.get_all_chats()
     out = "Chats Saved In DB Are:\n\n"
     async for chat in chats:

@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Tsunemoriii/Request-Trial",
-    "repository": "https://github.com/Tsunemoriii/Request-Trial",
+    "website": "https://github.com/Tsunemoriii/Faye-V1",
+    "repository": "https://github.com/Tsunemoriii/Faye-V1",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",

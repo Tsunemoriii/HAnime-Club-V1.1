@@ -100,7 +100,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
 
         buttons = [
             [
-                InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗭𝗼𝗺 - 𝟭𝟬𝟬⚡️⚡️", url=invite_link)
+                InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗛𝗼𝗿𝗶𝗺𝗶𝘆𝗮⚡️⚡️", url=invite_link)
             ],
             [
                 InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗦𝗼𝗻𝗶𝗰 𝗫 𝗙𝗹𝗶𝘅⚡️⚡️", url='https://t.me/addlist/K9tgxsIgBJ0xOWM9')

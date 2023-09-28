@@ -105,9 +105,6 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
             [
                 InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗦𝗼𝗻𝗶𝗰 𝗫 𝗙𝗹𝗶𝘅⚡️⚡️", url='https://t.me/addlist/K9tgxsIgBJ0xOWM9')
             ],
-            [
-                InlineKeyboardButton("𝗧𝗵𝗲𝗻 𝗖𝗹𝗶𝗰𝗸 🍁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 🍁 𝗔𝗴𝗮𝗶𝗻", callback_data=f"{mode}#{file_id}")
-            ],
         ]
         
         if file_id:

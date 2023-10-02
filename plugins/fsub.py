@@ -100,11 +100,14 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
 
         buttons = [
             [
-                InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗠𝗮𝘀𝗵𝗹𝗲⚡️⚡️", url=invite_link)
+                InlineKeyboardButton("⚡️𝗦𝗲𝗻𝗱 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗧𝗼 𝗕𝗮𝗰𝗸𝘂𝗽⚡️", url=invite_link)
             ],
             [
                 InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗦𝗼𝗻𝗶𝗰 𝗫 𝗙𝗹𝗶𝘅⚡️⚡️", url='https://t.me/addlist/K9tgxsIgBJ0xOWM9')
             ],
+            [
+                InlineKeyboardButton("⚡️𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲 𝗧𝗼 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻⚡️", callback_data=f"{mode}#{file_id}")
+            ]
         ]
         
         if file_id:

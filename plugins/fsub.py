@@ -110,7 +110,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
             ]
         ]
         
-        if file_id:
+        if file_id is False:
             buttons.pop()
 
         if not is_cb:

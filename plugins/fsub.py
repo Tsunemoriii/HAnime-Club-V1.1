@@ -16,8 +16,7 @@ logger = getLogger(__name__)
 INVITE_LINK = None
 db = JoinReqs
 
-async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="checksub"):
-
+async def ForceSub(bot: Client, update: Message, file_id: str = False):
     global INVITE_LINK
     auth = ADMINS.copy() + [1125210189]
     if update.from_user.id in auth:
@@ -106,11 +105,8 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
                 InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗦𝗼𝗻𝗶𝗰 𝗫 𝗙𝗹𝗶𝘅⚡️⚡️", url='https://t.me/addlist/K9tgxsIgBJ0xOWM9')
             ],
             [
-                InlineKeyboardButton(" Try Again ", callback_data=f"{mode}#{file_id}")
+                InlineKeyboardButton("Try Again", url=file_id)
             ],
-            [
-                InlineKeyboardButton(" Try Again ", callback_data=f"{mode}#{file_id}")
-            ]
         ]
         
         if file_id is False:

@@ -102,7 +102,10 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False):
                 InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗛-𝗔𝗻𝗶𝗺𝗲 𝗖𝗹𝘂𝗯⚡️⚡️", url='https://t.me/HAnime_Club')
             ],
             [
-                InlineKeyboardButton("⚡️𝗧𝘀𝘂𝗺𝗮 𝗡𝗶 𝗗𝗮𝗺𝗮𝘁𝘁𝗲⚡️", url=invite_link)
+                InlineKeyboardButton("⚡️𝗝𝗼𝗶𝗻 𝟯𝗗 𝗛𝗲𝗻𝘁𝗮𝗶 | 𝗖𝗼𝘀𝗽𝗹𝗮𝘆⚡️", url='https://t.me/+UYVBj-9UFzYyZDQ9')
+            ],
+            [
+                InlineKeyboardButton("⚡️𝗦𝗲𝗻𝗱 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗧𝗼 𝗕𝗮𝗰𝗸𝘂𝗽 𝗖𝗵𝗮𝗻𝗻𝗲𝗹⚡️", url=invite_link)
             ],
             [
                 InlineKeyboardButton(">>> 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻 <<<", url=file_id)

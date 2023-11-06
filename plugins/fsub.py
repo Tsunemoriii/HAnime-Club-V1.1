@@ -99,7 +99,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False):
 
         buttons = [
             [
-                InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗛-𝗔𝗻𝗶𝗺𝗲 𝗖𝗹𝘂𝗯⚡️⚡️", url='https://t.me/HAnime_Club')
+                InlineKeyboardButton("𝗝𝗼𝗶𝗻 ⚡️⚡️𝗢𝘁𝗮𝗸𝘂 𝗛-𝗔𝗻𝗶𝗺𝗲𝘀⚡️⚡️", url='https://t.me/Hanimes_Otaku')
             ],
             [
                 InlineKeyboardButton("⚡️𝗝𝗼𝗶𝗻 𝟯𝗗 𝗛𝗲𝗻𝘁𝗮𝗶 | 𝗖𝗼𝘀𝗽𝗹𝗮𝘆⚡️", url='https://t.me/+UYVBj-9UFzYyZDQ9')

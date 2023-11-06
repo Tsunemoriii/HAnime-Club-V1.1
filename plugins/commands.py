@@ -25,7 +25,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('⚡️⚡️𝗛-𝗔𝗻𝗶𝗺𝗲 𝗖𝗹𝘂𝗯⚡️⚡️', url='https://t.me/HAnime_Club')
+                InlineKeyboardButton('⚡️⚡️𝗢𝘁𝗮𝗸𝘂 𝗛-𝗔𝗻𝗶𝗺𝗲𝘀⚡️⚡️', url='https://t.me/Hanimes_Otaku')
             ],
             [
                 InlineKeyboardButton('𝗛𝗲𝗹𝗽', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -44,7 +44,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚡️⚡️𝗛-𝗔𝗻𝗶𝗺𝗲 𝗖𝗹𝘂𝗯⚡️⚡️', url='https://t.me/HAnime_Club'),
+            InlineKeyboardButton('⚡️⚡️𝗢𝘁𝗮𝗸𝘂 𝗛-𝗔𝗻𝗶𝗺𝗲𝘀⚡️⚡️', url='https://t.me/Hanimes_Otaku'),
             ],[
             InlineKeyboardButton('⚡️⚡️𝗦𝗼𝗻𝗶𝗰 𝗢𝘁𝗮𝗸𝘂𝘀⚡️⚡️', url='https://t.me/Sonic_Otakus'),
             ],[
@@ -70,7 +70,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('× 𝗧𝗿𝘆 𝗠𝗲 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡️⚡️𝗛-𝗔𝗻𝗶𝗺𝗲 𝗖𝗹𝘂𝗯⚡️⚡️', url='https://t.me/HAnime_Club'),
+            InlineKeyboardButton('⚡️⚡️𝗢𝘁𝗮𝗸𝘂 𝗛-𝗔𝗻𝗶𝗺𝗲𝘀⚡️⚡️', url='https://t.me/Hanimes_Otaku'),
             InlineKeyboardButton('⚡️⚡️𝗦𝗼𝗻𝗶𝗰 𝗢𝘁𝗮𝗸𝘂𝘀⚡️⚡️', url='https://t.me/Sonic_Otakus'),
             InlineKeyboardButton('⚡️⚡️𝗔𝗻𝗶𝗺𝗲 𝗙𝗹𝗶𝘅⚡️⚡️', url='https://t.me/Anime_Flix_Pro')
             ],[
